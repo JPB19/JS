@@ -12,27 +12,33 @@ else {
 
 var consultaflia = window.prompt("Cuantos integrantes tiene tu familia??");
 
-if (isNaN(consultaflia) || (consultaflia < 3 )) {
+if (isNaN(consultaflia) || (consultaflia < 4 )) {
   window.alert("ingrese un numero mayor a 3");
   window.prompt("Cuantos integrantes tiene tu familia??");
 }
 
 
-var gastos;
+//var gastos;
 
-/*var consultanombreygasto = window.prompt("Nombre y gastos de los integrantes");
-for (var i = 0; i <consultaflia ; i++) {
-  window.prompt("ingresa nombre de los integrantes");
-  if (true) {
+//var consultanombreygasto = window.prompt("Nombre y gastos de los integrantes");
+for (var i = 0; i < consultaflia ; i++) {
 
-  }*/
-
-  var consultanombre = window.prompt("nombe de los integrantes");
-  for (var i = 0; i < consultaflia; i++) {
-    if (consultanombre >consultaflia) {
-      window.prompt("ingresa otro integrante");
-    var nombre = i;
+  do {
+    var nombre = window.prompt("ingresa nombre del integrante");
+    if (nombre == "") {
+      window.alert("no puede estar vacio");
+      continue;
     }
+    var gastos = window.prompt("ingresa gasto del integrante");
+    if (gastos == "" || isNaN(gastos)){
+      window.alert("no puede estar vacio y tiene que ser un numero");
+
+    } while ();
+}
 
   }
-}
+
+
+
+
+  }
