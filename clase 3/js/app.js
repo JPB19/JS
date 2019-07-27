@@ -47,14 +47,14 @@ window.alert("tenes que poner al menos 3 tareas y en numero");
 }
 
   var lista = document.querySelector("ul");
-  var nuevoli = document.createElement("li");
-  for (var i = 0; i < tareas; i++) {
-  nuevoli.innertext = tareas.push(solicitudtarea)
-}
-lista.append(nuevoli);
-//console.log(tareas);
-console.log(nuevoli);
 
+  for (var i = 0; i < tareas.length; i++) {
+    var texto = document.createTextNode(tareas[i])
+    var li = document.createElement("li")
+    li.append(texto)
+    lista.append(li)
+    //lista.innerHTML += "<li>" + tareas[i] + "</li>"
+}
 
 
 
