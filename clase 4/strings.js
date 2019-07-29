@@ -19,4 +19,10 @@ for (var i = 0; i < parrafos.length; i++) {
 
 console.log(parrafomaslargo);
 
+
+console.log(parrafos);
+
+var resultadomatch = parrafos.match(/ECMA/g);
+
+console.log(resultadomatch);
 });
