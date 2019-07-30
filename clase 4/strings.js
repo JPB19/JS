@@ -21,8 +21,23 @@ console.log(parrafomaslargo);
 
 
 console.log(parrafos);
+var acum = [];
+parrafos.forEach(function (unP) {
+  if (unP.innerText.match(/ECMA/g)) {
+    acum.push(unP.innerText.match(/ECMA/g).join())
+  }
+})
 
-var resultadomatch = parrafos.match(/ECMA/g);
+console.log(acum);
+//var resultadomatch = parrafos.innerText.match(/ECMA/g);
 
-console.log(resultadomatch);
+// var parrafocompleto = document.querySelectorAll("p");
+// var acumuladorp = parrafocompleto.reduce(function(acum , unparrafo){
+//   return acum + unparrafo;
+// });
+//
+// console.log(acumuladorp);
+
+
+//console.log(resultadomatch);
 });
